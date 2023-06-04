@@ -1,0 +1,128 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --color-black-primary : rgb(0, 0, 0.64);
+    --color-black-secondary : rgb(0, 0, 0.14);
+}
+
+body{
+    height : 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height : 50px;
+    width: 100%;
+}
+
+.header_kanan{
+    display: flex;
+    padding: 10 20px;
+}
+
+.header_kanan a {
+    margin-right: 20px;
+    font-weight: 400;
+    color : var(--color-black-primary);
+}
+
+.header_kanan a:hover{
+    text-decoration: underline;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feature img{
+    width : 280px;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+.search_input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 98px;
+    padding: 0 16px;
+    border: 1px solid var(--color-black-secondary);
+}
+
+.search_input:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+}
+
+.search_input input{
+    flex: 1;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 3px;
+}
+
+.search_input .camera{
+    cursor: pointer;
+}
+
+.search_action{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.search_action button{
+    border : 1px solid transparent;
+    padding : 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search_action button:hover{
+    border : 1px solid var(--color-black-secondary);
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--color-black-primary);
+}
+
+.language a{
+    margin-right: 6px;
+}
